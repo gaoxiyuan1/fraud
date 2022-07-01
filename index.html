@@ -9,35 +9,56 @@
 		padding: 0;
 		overflow: hidden;
 	 }
-	 
+	 .div{
+		 position: absolute;
+		 width: 1898px;
+		 height: 1080px;
+		 margin: 0 auto;
+		 display: block;
+	 }
+	 .left{
+		float: left;
+	    top: 119px;
+	    left: 24px;
+	    width: 857px;
+	    height: 600px;
+	 }
+	 .image1{
+	 		position: absolute;
+			top: 120px;
+	 		transform: scale(0.75);
+	 		}
+	 .image2{
+			position: absolute;
+			left: 73px;
+			top: 425px;
+			transform: scale(0.5);
+	 }
+	 .right{
+		        width: 610px;
+		        height: 750px;
+		        padding-top: 18px;
+		        right: -39px;
+	 }
+	 .image3{
+			position: absolute;
+			right: 228px;
+			bottom: -461px;
+			transform: scale(0.3);
+			animation: move 2s ease;
+			animation-fill-mode: forwards;
+	 		}
 
 	 body{
 		 background-image: url(img/background.png);
 	 }
-	 .image1{
-		 position: absolute;
-		 top:70vh;
-		 right:60vw;
-		 transform: scale(1.4);
+	 
+	
+	 .image2:hover{
+		 transform:scale(0.6);
 	 }
-	 .image1:hover{
-		 transform:scale(1.2);
-	 }
-	 .image2{
-		position: absolute;
-		top:-113vh;
-		
-		transform: scale(0.3);
-	animation:move 2s ease ;
-	animation-fill-mode: forwards;
-		}
-	.image3{
-			position: absolute;
-			top:14vh;
-			left:0vw;
-			transform: scale(0.75);
-					
-			}
+	
+	
 	@keyframes move{
 		0%{
 			left:100vh;
@@ -50,20 +71,15 @@
 	 }
 	</style>
 	</head>
-	<script language="JavaScript">
-	// function hero(){
-	// 	var herowidth=1898;
-	// 	var heroheight= 1080;
-	// 	window.resizeTo(herowidth,heroheight);
-	// 	hero();
-	// }		
-	</script>
-	<body onresize=hero();>
-		<div>
-			<img class="image1" src="img/start.png" width="300"/>
-			<img class="image3" src="img/welcome.png"/>
-			<img class="image2" src="img/illustration.png"/>
-		</div>
-	
+		<body class="body">
+			<div class="div">
+				<div class="left">
+					<img class="image1" src="img/welcome.png"/>
+					<img class="image2" src="img/start.png" />
+					</div>
+				<div class="right">
+					<img class="image3" src="img/illustration.png"/>
+				</div>
+			</div>
 	</body>
 </html>
